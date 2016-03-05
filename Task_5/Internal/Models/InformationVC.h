@@ -1,5 +1,4 @@
 #import <UIKit/UIKit.h>
 
-@interface InformationVC : UIViewController<UIAlertViewDelegate>
-
+@interface InformationVC : UIViewController
 @end

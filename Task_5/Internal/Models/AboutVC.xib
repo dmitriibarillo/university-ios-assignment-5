@@ -37,7 +37,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="closeButtonTaped:" destination="-1" eventType="touchUpInside" id="wzx-qB-MCl"/>
+                        <action selector="closeButtonTaped" destination="-1" eventType="touchUpInside" id="HlL-yx-SSG"/>
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bdq-uP-VtV" userLabel="ImageView">

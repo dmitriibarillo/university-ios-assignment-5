@@ -3,9 +3,9 @@
 
 @interface InformationVC ()
 
-@property (weak, nonatomic) IBOutlet UILabel *shortInfoLabel;
-@property (weak, nonatomic) IBOutlet UIButton *alertButton;
-@property (weak, nonatomic) IBOutlet UIButton *informationButton;
+@property (nonatomic, weak) IBOutlet UILabel *shortInfoLabel;
+@property (nonatomic, weak) IBOutlet UIButton *alertButton;
+@property (nonatomic, weak) IBOutlet UIButton *informationButton;
 
 @end
 
@@ -19,22 +19,14 @@
 
 - (void)initializeComponents
 {
-    
     // initialize shortInfoLabel
-    _shortInfoLabel.text = @"Short information about athor";
-    _shortInfoLabel.textAlignment = NSTextAlignmentCenter;
+    self.shortInfoLabel.text = @"Short information about athor";
 
     // initialize alertButton
     [self.alertButton setTitle:@"Alert Button" forState:UIControlStateNormal];
-    _alertButton.titleLabel.numberOfLines = 0;
-    _alertButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    _alertButton.tintColor = [UIColor blackColor];
     
     // initialize informationButton
     [self.informationButton setTitle:@"More info" forState:UIControlStateNormal];
-    _informationButton.titleLabel.numberOfLines = 0;
-    _informationButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    _informationButton.tintColor = [UIColor blackColor];
 }
 
 - (IBAction)alertButtonTaped:(id)sender
@@ -45,7 +37,7 @@
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:alertTitle
                           message:alertText
-                          delegate:self
+                          delegate:nil
                           cancelButtonTitle:@"OK"
                           otherButtonTitles:nil];
     [alert show];

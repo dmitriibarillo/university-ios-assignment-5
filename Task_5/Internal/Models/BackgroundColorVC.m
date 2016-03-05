@@ -1,11 +1,12 @@
 #import "BackgroundColorVC.h"
+#import "UIColor+HexHelper.h"
 
-@interface BackgroundColorVC ()
+@interface BackgroundColorVC () <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *colorField;
-@property (weak, nonatomic) IBOutlet UISlider *redSlider;
-@property (weak, nonatomic) IBOutlet UISlider *greenSlider;
-@property (weak, nonatomic) IBOutlet UISlider *blueSlider;
+@property (nonatomic, weak) IBOutlet UITextField *colorField;
+@property (nonatomic, weak) IBOutlet UISlider *redSlider;
+@property (nonatomic, weak) IBOutlet UISlider *greenSlider;
+@property (nonatomic, weak) IBOutlet UISlider *blueSlider;
 @property (strong, nonatomic) UIButton *nextNCButton;
 
 @end
@@ -15,10 +16,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = [NSString stringWithFormat:@"BackgroundColorVC (%d)",[self.navigationController.viewControllers indexOfObject:self]];
     
     [self initializeComponents];
     [self updateBackgroundAndSliderColor:[UIColor greenColor]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    int numberOfTabBar = self.tabBarController.selectedIndex + 1;
+    int numberOfNavigationController = [self.navigationController.viewControllers indexOfObject:self];
+    self.navigationItem.title = [NSString stringWithFormat:@"BackgroundColorVC %d(%d)", numberOfTabBar, numberOfNavigationController];
 }
 
 - (void)initializeComponents
@@ -35,21 +42,22 @@
 - (void)nextButtonTapped
 {
     BackgroundColorVC *newBackgroundColorVC = [[BackgroundColorVC alloc] init];
+    [newBackgroundColorVC view];
     [self.navigationController pushViewController:newBackgroundColorVC animated:YES];
 }
 
 - (IBAction)sliderValueChanged:(id)sender
 {
-    float redColor = _redSlider.value / 255;
-    float greeColor = _greenSlider.value / 255;
-    float blueColor = _blueSlider.value / 255;
+    float redColor = self.redSlider.value / 255;
+    float greeColor = self.greenSlider.value / 255;
+    float blueColor = self.blueSlider.value / 255;
     [self updateBackgroundColor:[[UIColor alloc] initWithRed:redColor green:greeColor blue:blueColor alpha:1]];
     [self updateColorField:[[UIColor alloc] initWithRed:redColor green:greeColor blue:blueColor alpha:1]];
 }
 
 - (IBAction)colorFieldChanged:(id)sender
 {
-    NSString *hexColor = _colorField.text;
+    NSString *hexColor = self.colorField.text;
     NSString *colorString = [[hexColor stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
     
     unsigned color;
@@ -81,36 +89,22 @@
 
 - (void)updateSliderWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue
 {
-    _redSlider.value = red * 255;
-    _greenSlider.value = green * 255;
-    _blueSlider.value = blue * 255;
+    self.redSlider.value = red * 255;
+    self.greenSlider.value = green * 255;
+    self.blueSlider.value = blue * 255;
 }
 
 - (void)updateColorField:(UIColor *)color
 {
-    NSString *hexColor = [self rgbToHex:color];
-    _colorField.text = hexColor;
+    NSString *hexColor = color.rgbToHex;
+    self.colorField.text = hexColor;
 }
 
-
-- (NSString *)rgbToHex:(UIColor *)color
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    const CGFloat *components = CGColorGetComponents(color.CGColor);
-    float redColor = components[0];
-    float greenColor = components[1];
-    float blueColor = components[2];
+    NSString* resultString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     
-    NSString *hexColor = [NSString stringWithFormat:@"#%02lX%02lX%02lX",
-                          lroundf(redColor * 255),
-                          lroundf(greenColor * 255),
-                          lroundf(blueColor * 255)];
-    return hexColor;
-}
-
-+ (BOOL)validateHexColor:(NSString *)hexString {
-    NSString *hexColorRegex = @"#[A-F0-9a-f]{6}";
-    NSPredicate *hexColorTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", hexColorRegex];
-    return [hexColorTest evaluateWithObject:hexString];
+    return YES;
 }
 
 @end
