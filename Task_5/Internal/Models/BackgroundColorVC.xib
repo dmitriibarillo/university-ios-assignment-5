@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BackgroundColorVC">
+            <connections>
+                <outlet property="blueSlider" destination="uYK-mK-i3t" id="Tw3-xO-E5I"/>
+                <outlet property="colorField" destination="lfk-Nw-u8B" id="Kih-oy-66l"/>
+                <outlet property="greenSlider" destination="crR-QP-tdI" id="YFn-bx-K4T"/>
+                <outlet property="redSlider" destination="Hvp-x7-hvB" id="hA8-Zi-pQp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" userLabel="MainView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-Nw-u8B" userLabel="ColorField">
+                    <rect key="frame" x="88" y="80" width="130" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="8GH-qp-MBz"/>
+                        <constraint firstAttribute="height" constant="30" id="e1A-fx-kgl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="colorFieldChanged:" destination="-1" eventType="editingChanged" id="sQ2-qw-rmd"/>
+                    </connections>
+                </textField>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Hvp-x7-hvB" userLabel="RedSlider">
+                    <rect key="frame" x="18" y="130" width="284" height="31"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="z7L-7n-qby"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="crR-QP-tdI" userLabel="GreenSlider">
+                    <rect key="frame" x="18" y="180" width="284" height="31"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="LXy-Pg-8Ah"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="uYK-mK-i3t" userLabel="BlueSlider">
+                    <rect key="frame" x="18" y="230" width="284" height="31"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="ims-9V-6kN"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="crR-QP-tdI" firstAttribute="top" secondItem="Hvp-x7-hvB" secondAttribute="bottom" constant="20" id="6gO-4D-ykc"/>
+                <constraint firstItem="uYK-mK-i3t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="FEb-yg-zC8"/>
+                <constraint firstItem="uYK-mK-i3t" firstAttribute="top" secondItem="crR-QP-tdI" secondAttribute="bottom" constant="20" id="Hrk-Li-tZu"/>
+                <constraint firstItem="lfk-Nw-u8B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" placeholder="YES" id="L8T-wt-qBv"/>
+                <constraint firstItem="Hvp-x7-hvB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="R2R-6I-7O2"/>
+                <constraint firstAttribute="trailing" secondItem="crR-QP-tdI" secondAttribute="trailing" constant="20" id="Uh7-vr-B0z"/>
+                <constraint firstItem="crR-QP-tdI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="kkS-gM-0zt"/>
+                <constraint firstAttribute="trailing" secondItem="Hvp-x7-hvB" secondAttribute="trailing" constant="20" id="lW7-lu-FMf"/>
+                <constraint firstItem="Hvp-x7-hvB" firstAttribute="top" secondItem="lfk-Nw-u8B" secondAttribute="bottom" constant="20" id="nDd-nD-bOj"/>
+                <constraint firstAttribute="trailing" secondItem="uYK-mK-i3t" secondAttribute="trailing" constant="20" id="t6K-Wh-rUk"/>
+                <constraint firstAttribute="centerX" secondItem="lfk-Nw-u8B" secondAttribute="centerX" constant="7" id="x4H-S2-7V4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="96" y="439"/>
+        </view>
+    </objects>
+</document>

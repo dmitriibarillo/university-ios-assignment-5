@@ -20,10 +20,8 @@
     BackgroundColorVC *backgroundColorVC2 = [[BackgroundColorVC alloc] init];
     UINavigationController *nc1 = [[UINavigationController alloc] initWithRootViewController:backgroundColorVC1];
     nc1.title = @"NC_1";
-//    nc1.navigationBar.translucent = NO;
     
-    //UITabBarItem
-    
+
     UINavigationController *nc2 = [[UINavigationController alloc] initWithRootViewController:backgroundColorVC2];
     nc2.title = @"NC_2";
     
