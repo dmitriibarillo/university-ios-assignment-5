@@ -4,6 +4,8 @@
 
 - (NSString *)rgbToHex;
 
++ (UIColor *)hexToRBG:(NSString *)hexColor;
+
 + (BOOL)isValidHexColor:(NSString *)hexString;
 
 @end

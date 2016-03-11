@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		280DB01F1C8B764800C20DA0 /* UIColor+HexHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 280DB01E1C8B764800C20DA0 /* UIColor+HexHelper.m */; };
-		28C3FD341C8B09CB0094F86C /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C3FD2C1C8B09CB0094F86C /* AboutVC.m */; };
-		28C3FD351C8B09CB0094F86C /* AboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C3FD2D1C8B09CB0094F86C /* AboutVC.xib */; };
-		28C3FD361C8B09CB0094F86C /* BackgroundColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C3FD2F1C8B09CB0094F86C /* BackgroundColorVC.m */; };
-		28C3FD371C8B09CB0094F86C /* BackgroundColorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C3FD301C8B09CB0094F86C /* BackgroundColorVC.xib */; };
-		28C3FD381C8B09CB0094F86C /* InformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C3FD321C8B09CB0094F86C /* InformationVC.m */; };
-		28C3FD391C8B09CB0094F86C /* InformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C3FD331C8B09CB0094F86C /* InformationVC.xib */; };
+		280DB0231C8B821A00C20DA0 /* stevejobs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 280DB0221C8B821A00C20DA0 /* stevejobs.jpg */; };
+		2842C9EA1C90298E00E57E29 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842C9DF1C90298E00E57E29 /* AboutVC.m */; };
+		2842C9EB1C90298E00E57E29 /* AboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2842C9E01C90298E00E57E29 /* AboutVC.xib */; };
+		2842C9EC1C90298E00E57E29 /* BackgroundColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842C9E21C90298E00E57E29 /* BackgroundColorVC.m */; };
+		2842C9ED1C90298E00E57E29 /* BackgroundColorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2842C9E31C90298E00E57E29 /* BackgroundColorVC.xib */; };
+		2842C9EE1C90298E00E57E29 /* InformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842C9E51C90298E00E57E29 /* InformationVC.m */; };
+		2842C9EF1C90298E00E57E29 /* InformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2842C9E61C90298E00E57E29 /* InformationVC.xib */; };
+		2842C9F01C90298E00E57E29 /* InformationVCstoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842C9E81C90298E00E57E29 /* InformationVCstoryboard.m */; };
+		28D2AC551C92E8A900B84AD1 /* InformationVCstoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D2AC541C92E8A900B84AD1 /* InformationVCstoryboard.storyboard */; };
+		28D2AC581C92E95400B84AD1 /* AboutVCStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D2AC571C92E95400B84AD1 /* AboutVCStoryboard.m */; };
 		28EC58A81C85E910007CC7B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EC58A31C85E910007CC7B9 /* AppDelegate.m */; };
 		28EC58A91C85E910007CC7B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EC58A41C85E910007CC7B9 /* main.m */; };
 		28EC58B41C85E92B007CC7B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EC58B01C85E92B007CC7B9 /* Images.xcassets */; };
@@ -22,15 +26,21 @@
 /* Begin PBXFileReference section */
 		280DB01D1C8B764800C20DA0 /* UIColor+HexHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexHelper.h"; path = "Common/UIColor+HexHelper.h"; sourceTree = SOURCE_ROOT; };
 		280DB01E1C8B764800C20DA0 /* UIColor+HexHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexHelper.m"; path = "Common/UIColor+HexHelper.m"; sourceTree = SOURCE_ROOT; };
-		28C3FD2B1C8B09CB0094F86C /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
-		28C3FD2C1C8B09CB0094F86C /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
-		28C3FD2D1C8B09CB0094F86C /* AboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutVC.xib; sourceTree = "<group>"; };
-		28C3FD2E1C8B09CB0094F86C /* BackgroundColorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundColorVC.h; sourceTree = "<group>"; };
-		28C3FD2F1C8B09CB0094F86C /* BackgroundColorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundColorVC.m; sourceTree = "<group>"; };
-		28C3FD301C8B09CB0094F86C /* BackgroundColorVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundColorVC.xib; sourceTree = "<group>"; };
-		28C3FD311C8B09CB0094F86C /* InformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationVC.h; sourceTree = "<group>"; };
-		28C3FD321C8B09CB0094F86C /* InformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationVC.m; sourceTree = "<group>"; };
-		28C3FD331C8B09CB0094F86C /* InformationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationVC.xib; sourceTree = "<group>"; };
+		280DB0221C8B821A00C20DA0 /* stevejobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stevejobs.jpg; path = Resourses/Images.xcassets/stevejobs.jpg; sourceTree = SOURCE_ROOT; };
+		2842C9DE1C90298E00E57E29 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		2842C9DF1C90298E00E57E29 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		2842C9E01C90298E00E57E29 /* AboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutVC.xib; sourceTree = "<group>"; };
+		2842C9E11C90298E00E57E29 /* BackgroundColorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundColorVC.h; sourceTree = "<group>"; };
+		2842C9E21C90298E00E57E29 /* BackgroundColorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundColorVC.m; sourceTree = "<group>"; };
+		2842C9E31C90298E00E57E29 /* BackgroundColorVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundColorVC.xib; sourceTree = "<group>"; };
+		2842C9E41C90298E00E57E29 /* InformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationVC.h; sourceTree = "<group>"; };
+		2842C9E51C90298E00E57E29 /* InformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationVC.m; sourceTree = "<group>"; };
+		2842C9E61C90298E00E57E29 /* InformationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationVC.xib; sourceTree = "<group>"; };
+		2842C9E71C90298E00E57E29 /* InformationVCstoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationVCstoryboard.h; sourceTree = "<group>"; };
+		2842C9E81C90298E00E57E29 /* InformationVCstoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationVCstoryboard.m; sourceTree = "<group>"; };
+		28D2AC541C92E8A900B84AD1 /* InformationVCstoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InformationVCstoryboard.storyboard; sourceTree = "<group>"; };
+		28D2AC561C92E95400B84AD1 /* AboutVCStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVCStoryboard.h; sourceTree = "<group>"; };
+		28D2AC571C92E95400B84AD1 /* AboutVCStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVCStoryboard.m; sourceTree = "<group>"; };
 		28EC58771C85E768007CC7B9 /* Task_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EC58A21C85E910007CC7B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Internal/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		28EC58A31C85E910007CC7B9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Internal/AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -57,11 +67,35 @@
 				280DB01E1C8B764800C20DA0 /* UIColor+HexHelper.m */,
 			);
 			name = Common;
+			path = Task_5;
 			sourceTree = "<group>";
+		};
+		2842C9DD1C90298E00E57E29 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2842C9DE1C90298E00E57E29 /* AboutVC.h */,
+				2842C9DF1C90298E00E57E29 /* AboutVC.m */,
+				2842C9E01C90298E00E57E29 /* AboutVC.xib */,
+				2842C9E11C90298E00E57E29 /* BackgroundColorVC.h */,
+				2842C9E21C90298E00E57E29 /* BackgroundColorVC.m */,
+				2842C9E31C90298E00E57E29 /* BackgroundColorVC.xib */,
+				2842C9E41C90298E00E57E29 /* InformationVC.h */,
+				2842C9E51C90298E00E57E29 /* InformationVC.m */,
+				2842C9E61C90298E00E57E29 /* InformationVC.xib */,
+				2842C9E71C90298E00E57E29 /* InformationVCstoryboard.h */,
+				2842C9E81C90298E00E57E29 /* InformationVCstoryboard.m */,
+				28D2AC561C92E95400B84AD1 /* AboutVCStoryboard.h */,
+				28D2AC571C92E95400B84AD1 /* AboutVCStoryboard.m */,
+				28D2AC541C92E8A900B84AD1 /* InformationVCstoryboard.storyboard */,
+			);
+			name = ViewControllers;
+			path = Internal/ViewControllers;
+			sourceTree = SOURCE_ROOT;
 		};
 		28EC586E1C85E768007CC7B9 = {
 			isa = PBXGroup;
 			children = (
+				280DB0191C8B599700C20DA0 /* Common */,
 				28EC58791C85E768007CC7B9 /* Internal */,
 				28EC58931C85E768007CC7B9 /* Resourses */,
 				28EC58781C85E768007CC7B9 /* Products */,
@@ -79,8 +113,7 @@
 		28EC58791C85E768007CC7B9 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				280DB0191C8B599700C20DA0 /* Common */,
-				28EC58A51C85E910007CC7B9 /* Models */,
+				2842C9DD1C90298E00E57E29 /* ViewControllers */,
 				28EC58A21C85E910007CC7B9 /* AppDelegate.h */,
 				28EC58A31C85E910007CC7B9 /* AppDelegate.m */,
 				28EC58A41C85E910007CC7B9 /* main.m */,
@@ -93,28 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				28EC58B01C85E92B007CC7B9 /* Images.xcassets */,
+				280DB0221C8B821A00C20DA0 /* stevejobs.jpg */,
 				28EC58B11C85E92B007CC7B9 /* Info.plist */,
 			);
 			name = Resourses;
 			path = Task_5Tests;
 			sourceTree = "<group>";
-		};
-		28EC58A51C85E910007CC7B9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				28C3FD2B1C8B09CB0094F86C /* AboutVC.h */,
-				28C3FD2C1C8B09CB0094F86C /* AboutVC.m */,
-				28C3FD2D1C8B09CB0094F86C /* AboutVC.xib */,
-				28C3FD2E1C8B09CB0094F86C /* BackgroundColorVC.h */,
-				28C3FD2F1C8B09CB0094F86C /* BackgroundColorVC.m */,
-				28C3FD301C8B09CB0094F86C /* BackgroundColorVC.xib */,
-				28C3FD311C8B09CB0094F86C /* InformationVC.h */,
-				28C3FD321C8B09CB0094F86C /* InformationVC.m */,
-				28C3FD331C8B09CB0094F86C /* InformationVC.xib */,
-			);
-			name = Models;
-			path = Internal/Models;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -173,10 +190,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C3FD371C8B09CB0094F86C /* BackgroundColorVC.xib in Resources */,
-				28C3FD351C8B09CB0094F86C /* AboutVC.xib in Resources */,
+				2842C9ED1C90298E00E57E29 /* BackgroundColorVC.xib in Resources */,
+				2842C9EB1C90298E00E57E29 /* AboutVC.xib in Resources */,
+				280DB0231C8B821A00C20DA0 /* stevejobs.jpg in Resources */,
+				28D2AC551C92E8A900B84AD1 /* InformationVCstoryboard.storyboard in Resources */,
+				2842C9EF1C90298E00E57E29 /* InformationVC.xib in Resources */,
 				28EC58B41C85E92B007CC7B9 /* Images.xcassets in Resources */,
-				28C3FD391C8B09CB0094F86C /* InformationVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,12 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C3FD341C8B09CB0094F86C /* AboutVC.m in Sources */,
+				2842C9EA1C90298E00E57E29 /* AboutVC.m in Sources */,
 				280DB01F1C8B764800C20DA0 /* UIColor+HexHelper.m in Sources */,
+				2842C9F01C90298E00E57E29 /* InformationVCstoryboard.m in Sources */,
+				28D2AC581C92E95400B84AD1 /* AboutVCStoryboard.m in Sources */,
 				28EC58A91C85E910007CC7B9 /* main.m in Sources */,
 				28EC58A81C85E910007CC7B9 /* AppDelegate.m in Sources */,
-				28C3FD361C8B09CB0094F86C /* BackgroundColorVC.m in Sources */,
-				28C3FD381C8B09CB0094F86C /* InformationVC.m in Sources */,
+				2842C9EC1C90298E00E57E29 /* BackgroundColorVC.m in Sources */,
+				2842C9EE1C90298E00E57E29 /* InformationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +309,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -298,6 +320,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

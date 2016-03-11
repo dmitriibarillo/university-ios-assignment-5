@@ -7,7 +7,7 @@
 @property (nonatomic, weak) IBOutlet UISlider *redSlider;
 @property (nonatomic, weak) IBOutlet UISlider *greenSlider;
 @property (nonatomic, weak) IBOutlet UISlider *blueSlider;
-@property (strong, nonatomic) UIButton *nextNCButton;
+@property (nonatomic, strong) UIButton *nextNCButton;
 
 @end
 
@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     [self initializeComponents];
-    [self updateBackgroundAndSliderColor:[UIColor greenColor]];
+    [self updateBackgroundAndSliderColor:[UIColor whiteColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -42,7 +42,6 @@
 - (void)nextButtonTapped
 {
     BackgroundColorVC *newBackgroundColorVC = [[BackgroundColorVC alloc] init];
-    [newBackgroundColorVC view];
     [self.navigationController pushViewController:newBackgroundColorVC animated:YES];
 }
 
@@ -55,26 +54,12 @@
     [self updateColorField:[[UIColor alloc] initWithRed:redColor green:greeColor blue:blueColor alpha:1]];
 }
 
-- (IBAction)colorFieldChanged:(id)sender
-{
-    NSString *hexColor = self.colorField.text;
-    NSString *colorString = [[hexColor stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
-    
-    unsigned color;
-    [[NSScanner scannerWithString:colorString] scanHexInt:&color];
-    float red = ((color >> 16) & 0xFF) / 255.0f;
-    float green = ((color >> 8) & 0xFF) / 255.0f;
-    float blue = ((color >> 0) & 0xFF) / 255.0f;
-
-    UIColor *newColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
-    
-    [self updateBackgroundAndSliderColor:newColor];
-}
-
-
 - (void)updateBackgroundColor:(UIColor *)color
 {
     self.view.backgroundColor = color;
+    CGFloat red, green, blue, alpha;
+    [self.view.backgroundColor getRed:&red green:&green blue:&blue alpha:&alpha];
+    [self updateSliderWithRed:red green:green blue:blue];
 }
 
 - (void)updateBackgroundAndSliderColor:(UIColor *)color
@@ -103,6 +88,21 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSString* resultString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    
+    if (resultString.length > 7 )
+        return NO;
+    if (resultString.length > 1 && resultString.length < 8) {
+        if (![[resultString substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"#"]) {
+            return NO;
+        }
+        else if (![UIColor isValidHexColor:resultString]) {
+            return NO;
+        }
+        else {
+            UIColor *color = [UIColor hexToRBG:resultString];
+            [self updateBackgroundColor:color];
+        }
+    }
     
     return YES;
 }

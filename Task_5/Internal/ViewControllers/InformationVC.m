@@ -29,7 +29,7 @@
     [self.informationButton setTitle:@"More info" forState:UIControlStateNormal];
 }
 
-- (IBAction)alertButtonTaped:(id)sender
+- (IBAction)alertButtonTaped
 {
     NSString *alertText = @"The alert button has been taped.";
     NSString *alertTitle = @"Some Title";
@@ -43,7 +43,7 @@
     [alert show];
 }
 
-- (IBAction)informationButtonTaped:(id)sender
+- (IBAction)informationButtonTaped
 {
     AboutVC *aboutPage = [[AboutVC alloc] initWithNibName:NSStringFromClass([AboutVC class])
                                                    bundle:[NSBundle mainBundle]];

@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShortInfoLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5h-sU-5VB" userLabel="ShortInfoLabel">
-                    <rect key="frame" x="16" y="50" width="280" height="21"/>
+                    <rect key="frame" x="20" y="50" width="280" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="2P3-6Z-YsJ"/>
                     </constraints>
@@ -37,7 +37,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="alertButtonTaped:" destination="-1" eventType="touchUpInside" id="Dq7-Yr-Ovm"/>
+                        <action selector="alertButtonTaped" destination="-1" eventType="touchUpInside" id="FFx-Mb-Mll"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJk-JH-6Cr" userLabel="InformationButton">
@@ -51,7 +51,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="informationButtonTaped:" destination="-1" eventType="touchUpInside" id="1iE-X8-oUb"/>
+                        <action selector="informationButtonTaped" destination="-1" eventType="touchUpInside" id="Kyg-FN-8eW"/>
                     </connections>
                 </button>
             </subviews>
@@ -60,7 +60,7 @@
                 <constraint firstItem="KWI-CD-4bL" firstAttribute="top" secondItem="Q5h-sU-5VB" secondAttribute="bottom" constant="40" id="0Mt-gM-jGO"/>
                 <constraint firstItem="rJk-JH-6Cr" firstAttribute="top" secondItem="Q5h-sU-5VB" secondAttribute="bottom" constant="40" id="87J-qm-C2w"/>
                 <constraint firstAttribute="centerX" secondItem="rJk-JH-6Cr" secondAttribute="centerX" constant="-70" id="Y9v-JU-SiJ"/>
-                <constraint firstAttribute="centerX" secondItem="Q5h-sU-5VB" secondAttribute="centerX" constant="4.5" id="cXG-nh-g04"/>
+                <constraint firstAttribute="centerX" secondItem="Q5h-sU-5VB" secondAttribute="centerX" id="cXG-nh-g04"/>
                 <constraint firstItem="Q5h-sU-5VB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="ilv-MS-XMY"/>
                 <constraint firstAttribute="centerX" secondItem="KWI-CD-4bL" secondAttribute="centerX" constant="70" id="yeA-j0-j2h"/>
             </constraints>

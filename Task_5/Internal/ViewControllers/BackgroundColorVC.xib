@@ -27,7 +27,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
-                        <action selector="colorFieldChanged:" destination="-1" eventType="editingChanged" id="sQ2-qw-rmd"/>
+                        <outlet property="delegate" destination="-1" id="D9V-Zy-yn1"/>
                     </connections>
                 </textField>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Hvp-x7-hvB" userLabel="RedSlider">

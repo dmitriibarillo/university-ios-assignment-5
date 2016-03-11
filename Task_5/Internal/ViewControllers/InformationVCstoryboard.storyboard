@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Btd-dA-HAf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--InformationVCstoryboard-->
+        <scene sceneID="Dh7-LW-QbA">
+            <objects>
+                <viewController title="InformationVCstoryboard" id="Btd-dA-HAf" userLabel="InformationVCstoryboard" customClass="InformationVCstoryboard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3WZ-Zg-CSO"/>
+                        <viewControllerLayoutGuide type="bottom" id="x4g-hQ-o7x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDg-Q3-Dno">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short information about athor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9k-L4-h7C" userLabel="ShortInfoLabel">
+                                <rect key="frame" x="20" y="50" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="FsX-6T-xIW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y6-cg-g3x">
+                                <rect key="frame" x="40" y="111" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UEF-kg-ag7"/>
+                                    <constraint firstAttribute="width" constant="100" id="YuO-8P-SRh"/>
+                                </constraints>
+                                <state key="normal" title="Alert Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertButtonTaped" destination="Btd-dA-HAf" eventType="touchUpInside" id="xcz-mA-fzg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khe-uI-oTH">
+                                <rect key="frame" x="180" y="111" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EVy-14-mGD"/>
+                                </constraints>
+                                <state key="normal" title="More info">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e0Y-SW-zdL" kind="show" id="cxr-Sd-JhF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="khe-uI-oTH" firstAttribute="top" secondItem="T9k-L4-h7C" secondAttribute="bottom" constant="40" id="HQz-J7-WG7"/>
+                            <constraint firstAttribute="centerX" secondItem="khe-uI-oTH" secondAttribute="centerX" constant="-70" id="HYa-C1-dMm"/>
+                            <constraint firstItem="2Y6-cg-g3x" firstAttribute="top" secondItem="T9k-L4-h7C" secondAttribute="bottom" constant="40" id="OnB-eJ-2bx"/>
+                            <constraint firstAttribute="centerX" secondItem="2Y6-cg-g3x" secondAttribute="centerX" constant="70" id="Vuj-Dd-nKE"/>
+                            <constraint firstItem="T9k-L4-h7C" firstAttribute="top" secondItem="gDg-Q3-Dno" secondAttribute="topMargin" constant="50" id="u2A-UF-zRK"/>
+                            <constraint firstAttribute="centerX" secondItem="T9k-L4-h7C" secondAttribute="centerX" id="uBU-p8-wjC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mf9-L7-wHb"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEv-zU-C5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="147"/>
+        </scene>
+        <!--AboutVC Storyboard-->
+        <scene sceneID="aZM-0j-qaW">
+            <objects>
+                <viewController id="e0Y-SW-zdL" customClass="AboutVCStoryboard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9vW-sO-Puh"/>
+                        <viewControllerLayoutGuide type="bottom" id="kqG-Qn-nlK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sXi-wn-2vg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-nS-Cyu" userLabel="CloseButton">
+                                <rect key="frame" x="16" y="518" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mP0-1L-8XW"/>
+                                </constraints>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTaped" destination="e0Y-SW-zdL" eventType="touchUpInside" id="gS8-1y-f8r"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAZ-KD-TXD" userLabel="ScrollView">
+                                <rect key="frame" x="16" y="20" width="288" height="498"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7M-e1-z5T" userLabel="SubView">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="707"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-1J-2kX">
+                                                <rect key="frame" x="0.0" y="199" width="288" height="508"/>
+                                                <mutableString key="text">Steven Paul \"Steve\" Jobs (/ˈdʒɒbz/; February 24, 1955 – October 5, 2011) was an American information technology entrepreneur and inventor. He was the co-founder, chairman, and chief executive officer (CEO) of Apple Inc.; CEO and largest shareholder of Pixar Animation Studios;[3] a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and founder, chairman, and CEO of NeXT Inc. Jobs is widely recognized as a pioneer of the microcomputer revolution of the 1970s, along with Apple co-founder Steve Wozniak. Shortly after his death, Jobs's official biographer, Walter Isaacson, described him as a \"creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing.\"</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stevejobs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-qn-rVb">
+                                                <rect key="frame" x="69" y="20" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="jpw-Lt-kai"/>
+                                                    <constraint firstAttribute="width" constant="150" id="ntt-E9-vnf"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.48974042750000002" green="1" blue="0.80229915679999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="MBy-1J-2kX" firstAttribute="top" secondItem="P7M-e1-z5T" secondAttribute="top" constant="200" id="2e8-TO-JMl"/>
+                                            <constraint firstItem="MBy-1J-2kX" firstAttribute="top" secondItem="UJU-qn-rVb" secondAttribute="bottom" constant="29" id="7Hw-gK-8dm"/>
+                                            <constraint firstAttribute="centerX" secondItem="UJU-qn-rVb" secondAttribute="centerX" id="7Jy-TL-au5"/>
+                                            <constraint firstAttribute="trailing" secondItem="MBy-1J-2kX" secondAttribute="trailing" id="9FO-cG-qbA"/>
+                                            <constraint firstItem="MBy-1J-2kX" firstAttribute="leading" secondItem="P7M-e1-z5T" secondAttribute="leading" id="VIq-fL-09G"/>
+                                            <constraint firstItem="UJU-qn-rVb" firstAttribute="top" secondItem="P7M-e1-z5T" secondAttribute="top" constant="20" id="Xq2-qc-TVE"/>
+                                            <constraint firstAttribute="width" secondItem="MBy-1J-2kX" secondAttribute="width" id="eiq-LU-dm3"/>
+                                            <constraint firstAttribute="bottom" secondItem="MBy-1J-2kX" secondAttribute="bottom" id="pZS-Qu-Qfd"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2e8-TO-JMl"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="P7M-e1-z5T" secondAttribute="bottom" id="JoG-OS-54q"/>
+                                    <constraint firstItem="P7M-e1-z5T" firstAttribute="width" secondItem="jAZ-KD-TXD" secondAttribute="width" id="oro-NX-85Y"/>
+                                    <constraint firstItem="P7M-e1-z5T" firstAttribute="top" secondItem="jAZ-KD-TXD" secondAttribute="top" id="qen-eH-ciw"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7M-e1-z5T" secondAttribute="trailing" id="sLe-9l-yEC"/>
+                                    <constraint firstItem="P7M-e1-z5T" firstAttribute="leading" secondItem="jAZ-KD-TXD" secondAttribute="leading" id="vL0-Zs-wA0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kqG-Qn-nlK" firstAttribute="top" secondItem="vXo-nS-Cyu" secondAttribute="bottom" id="1iO-ot-VAr"/>
+                            <constraint firstItem="jAZ-KD-TXD" firstAttribute="top" secondItem="9vW-sO-Puh" secondAttribute="bottom" id="6yM-w2-dcY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vXo-nS-Cyu" secondAttribute="trailing" id="bLE-ym-iVs"/>
+                            <constraint firstItem="jAZ-KD-TXD" firstAttribute="leading" secondItem="sXi-wn-2vg" secondAttribute="leadingMargin" id="d5O-Y5-CFu"/>
+                            <constraint firstItem="vXo-nS-Cyu" firstAttribute="leading" secondItem="sXi-wn-2vg" secondAttribute="leadingMargin" id="ioc-TC-apf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jAZ-KD-TXD" secondAttribute="trailing" id="n3y-V2-f71"/>
+                            <constraint firstItem="vXo-nS-Cyu" firstAttribute="top" secondItem="jAZ-KD-TXD" secondAttribute="bottom" id="yhq-ln-AKc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqU-4p-3qR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stevejobs.jpg" width="1488" height="1896"/>
+    </resources>
+</document>
