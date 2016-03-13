@@ -5,10 +5,6 @@
 
 @implementation AboutVCStoryboard
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (IBAction)closeButtonTaped
 {
     [self dismissViewControllerAnimated:YES completion:nil];

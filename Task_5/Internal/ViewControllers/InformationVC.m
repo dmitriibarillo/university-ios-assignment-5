@@ -45,8 +45,7 @@
 
 - (IBAction)informationButtonTaped
 {
-    AboutVC *aboutPage = [[AboutVC alloc] initWithNibName:NSStringFromClass([AboutVC class])
-                                                   bundle:[NSBundle mainBundle]];
+    AboutVC *aboutPage = [[AboutVC alloc] init];
     [self presentViewController:aboutPage animated:YES completion:nil];
 }
 

@@ -23,9 +23,9 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    int numberOfTabBar = self.tabBarController.selectedIndex + 1;
-    int numberOfNavigationController = [self.navigationController.viewControllers indexOfObject:self];
-    self.navigationItem.title = [NSString stringWithFormat:@"BackgroundColorVC %d(%d)", numberOfTabBar, numberOfNavigationController];
+    NSUInteger numberOfTabBar = self.tabBarController.selectedIndex + 1;
+    NSUInteger numberOfNavigationController = [self.navigationController.viewControllers indexOfObject:self];
+    self.navigationItem.title = [NSString stringWithFormat:@"BackgroundColorVC %lu(%lu)", (unsigned long)numberOfTabBar,(unsigned long)numberOfNavigationController];
 }
 
 - (void)initializeComponents
@@ -47,11 +47,11 @@
 
 - (IBAction)sliderValueChanged:(id)sender
 {
-    float redColor = self.redSlider.value / 255;
-    float greeColor = self.greenSlider.value / 255;
-    float blueColor = self.blueSlider.value / 255;
-    [self updateBackgroundColor:[[UIColor alloc] initWithRed:redColor green:greeColor blue:blueColor alpha:1]];
-    [self updateColorField:[[UIColor alloc] initWithRed:redColor green:greeColor blue:blueColor alpha:1]];
+    float red = self.redSlider.value / 255;
+    float gree = self.greenSlider.value / 255;
+    float blue = self.blueSlider.value / 255;
+    [self updateBackgroundColor:[[UIColor alloc] initWithRed:red green:gree blue:blue alpha:1]];
+    [self updateColorField:[[UIColor alloc] initWithRed:red green:gree blue:blue alpha:1]];
 }
 
 - (void)updateBackgroundColor:(UIColor *)color
@@ -89,9 +89,10 @@
 {
     NSString* resultString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     
-    if (resultString.length > 7 )
+    if (resultString.length > 7 ) {
         return NO;
-    if (resultString.length > 1 && resultString.length < 8) {
+    }
+    else if (resultString.length > 1 && resultString.length < 8) {
         if (![[resultString substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"#"]) {
             return NO;
         }
@@ -104,6 +105,12 @@
         }
     }
     
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
     return YES;
 }
 

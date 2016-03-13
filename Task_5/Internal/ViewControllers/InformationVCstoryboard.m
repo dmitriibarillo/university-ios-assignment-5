@@ -1,8 +1,5 @@
 #import "InformationVCstoryboard.h"
 
-NSString* kThirdStoryboardName = @"InformationVCstoryboard";
-NSString* kThirdViewControllerID = @"InformationVCstoryboard";
-
 @interface InformationVCstoryboard ()
 @end
 

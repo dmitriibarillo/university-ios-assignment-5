@@ -1,7 +1,6 @@
 #import "AppDelegate.h"
 #import "BackgroundColorVC.h"
 #import "InformationVC.h"
-#import "InformationVCstoryboard.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +27,7 @@
     informationVC.title = @"VC";
     
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:kThirdStoryboardName bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Information" bundle:nil];
     UIViewController *navtab = [storyboard instantiateInitialViewController];
     navtab.title = @"SB";
     

@@ -16,7 +16,8 @@
 		2842C9EE1C90298E00E57E29 /* InformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842C9E51C90298E00E57E29 /* InformationVC.m */; };
 		2842C9EF1C90298E00E57E29 /* InformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2842C9E61C90298E00E57E29 /* InformationVC.xib */; };
 		2842C9F01C90298E00E57E29 /* InformationVCstoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842C9E81C90298E00E57E29 /* InformationVCstoryboard.m */; };
-		28D2AC551C92E8A900B84AD1 /* InformationVCstoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D2AC541C92E8A900B84AD1 /* InformationVCstoryboard.storyboard */; };
+		286367D21C95951E00520B18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286367D01C95951E00520B18 /* LaunchScreen.xib */; };
+		28D2AC551C92E8A900B84AD1 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D2AC541C92E8A900B84AD1 /* Information.storyboard */; };
 		28D2AC581C92E95400B84AD1 /* AboutVCStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D2AC571C92E95400B84AD1 /* AboutVCStoryboard.m */; };
 		28EC58A81C85E910007CC7B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EC58A31C85E910007CC7B9 /* AppDelegate.m */; };
 		28EC58A91C85E910007CC7B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EC58A41C85E910007CC7B9 /* main.m */; };
@@ -38,7 +39,8 @@
 		2842C9E61C90298E00E57E29 /* InformationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationVC.xib; sourceTree = "<group>"; };
 		2842C9E71C90298E00E57E29 /* InformationVCstoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationVCstoryboard.h; sourceTree = "<group>"; };
 		2842C9E81C90298E00E57E29 /* InformationVCstoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationVCstoryboard.m; sourceTree = "<group>"; };
-		28D2AC541C92E8A900B84AD1 /* InformationVCstoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InformationVCstoryboard.storyboard; sourceTree = "<group>"; };
+		286367D11C95951E00520B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resourses/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		28D2AC541C92E8A900B84AD1 /* Information.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
 		28D2AC561C92E95400B84AD1 /* AboutVCStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVCStoryboard.h; sourceTree = "<group>"; };
 		28D2AC571C92E95400B84AD1 /* AboutVCStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVCStoryboard.m; sourceTree = "<group>"; };
 		28EC58771C85E768007CC7B9 /* Task_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +88,7 @@
 				2842C9E81C90298E00E57E29 /* InformationVCstoryboard.m */,
 				28D2AC561C92E95400B84AD1 /* AboutVCStoryboard.h */,
 				28D2AC571C92E95400B84AD1 /* AboutVCStoryboard.m */,
-				28D2AC541C92E8A900B84AD1 /* InformationVCstoryboard.storyboard */,
+				28D2AC541C92E8A900B84AD1 /* Information.storyboard */,
 			);
 			name = ViewControllers;
 			path = Internal/ViewControllers;
@@ -125,6 +127,7 @@
 		28EC58931C85E768007CC7B9 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				286367D01C95951E00520B18 /* LaunchScreen.xib */,
 				28EC58B01C85E92B007CC7B9 /* Images.xcassets */,
 				280DB0221C8B821A00C20DA0 /* stevejobs.jpg */,
 				28EC58B11C85E92B007CC7B9 /* Info.plist */,
@@ -193,7 +196,8 @@
 				2842C9ED1C90298E00E57E29 /* BackgroundColorVC.xib in Resources */,
 				2842C9EB1C90298E00E57E29 /* AboutVC.xib in Resources */,
 				280DB0231C8B821A00C20DA0 /* stevejobs.jpg in Resources */,
-				28D2AC551C92E8A900B84AD1 /* InformationVCstoryboard.storyboard in Resources */,
+				286367D21C95951E00520B18 /* LaunchScreen.xib in Resources */,
+				28D2AC551C92E8A900B84AD1 /* Information.storyboard in Resources */,
 				2842C9EF1C90298E00E57E29 /* InformationVC.xib in Resources */,
 				28EC58B41C85E92B007CC7B9 /* Images.xcassets in Resources */,
 			);
@@ -218,6 +222,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		286367D01C95951E00520B18 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286367D11C95951E00520B18 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		28EC58981C85E768007CC7B9 /* Debug */ = {
